@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-10up",
+  "version": "1.0.2",
+  "description": "A shareable ESLint configuration",
+  "main": ".eslintrc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/10up/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/10up/eslint-config/issues"
+  },
+  "author": "10up <info@10up.com> (https://10up.com)",
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/10up/eslint-config#readme",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "10up"
+  ],
+  "devDependencies": {
+    "eslint": "^2.0.0"
+  },
+  "eslintContig": {
+    "extends": "./.eslintrc"
+  }
+}
