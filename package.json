@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-10up",
   "version": "1.0.2",
-  "description": "A shareable ESLint configuration",
-  "main": ".eslintrc",
+  "description": "A shareable ESLint configuration from 10up.",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/10up/eslint-config.git"
@@ -16,12 +16,21 @@
   "keywords": [
     "eslint",
     "eslint-config",
-    "10up"
+    "10up",
+    "javascript",
+    "config",
+    "styleguide"
   ],
   "devDependencies": {
-    "eslint": "^2.0.0"
+    "eslint": "^3.14.0",
+    "eslint-find-rules": "^1.14.3",
+    "eslint-plugin-import": "^2.2.0"
   },
-  "eslintContig": {
+  "peerDependencies": {
+    "eslint": "^3.13.0",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "eslintConfig": {
     "extends": "./.eslintrc"
   }
 }
