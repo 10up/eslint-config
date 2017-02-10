@@ -91,7 +91,7 @@ module.exports = {
 		'no-mixed-spaces-and-tabs': 'error',
 		'no-multiple-empty-lines': 'error',
 		'no-negated-condition': 'off',
-		'no-nested-ternary': 'error',
+		'no-nested-ternary': 'off',
 		'no-new-object': 'error',
 		'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
 		'no-spaced-func': 'error',
