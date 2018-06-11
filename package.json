@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-10up",
+  "name": "@10up/eslint-config",
   "version": "1.0.2",
   "description": "A shareable ESLint configuration",
   "main": ".eslintrc",
