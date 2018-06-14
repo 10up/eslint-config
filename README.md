@@ -16,7 +16,14 @@ Next, add this configuration to your `package.json`:
 ```json
 {
     "eslintConfig": {
-        "extends": "10up"
+        "extends": "@10up/eslint-config"
     }
+}
+```
+
+Or add a .eslintrc file to your project root containing: 
+```json
+{
+    "extends": "@10up/eslint-config"
 }
 ```
