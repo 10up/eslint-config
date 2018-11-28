@@ -1,6 +1,6 @@
 {
   "name": "@10up/eslint-config",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A shareable ESLint configuration",
   "main": ".eslintrc",
   "repository": {
@@ -21,7 +21,7 @@
   "devDependencies": {
     "eslint": "^2.0.0"
   },
-  "eslintContig": {
+  "eslintConfig": {
     "extends": "./.eslintrc"
   }
 }
