@@ -18,7 +18,8 @@
     "eslint-config",
     "10up"
   ],
-  "devDependencies": {
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint": "^2.0.0"
   },
   "eslintConfig": {
