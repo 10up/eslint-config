@@ -12,16 +12,20 @@
     "quotes": [ 2, "single" ],
     "semi": [ 2, "always" ],
     "space-in-parens": [ 2, "always" ],
+    "camelcase": [ 2 ],
+    "prefer-template": [ 2 ],
+    "prefer-const": [ 2 ],
+    "prefer-destructuring": [ 1 ],
     "no-console": [ 1 ],
     "no-alert": [ 1 ],
-    "camelcase": [ 2 ],
+    "no-var": [ 1 ],
     "require-jsdoc": [ 2, {
-      "require" : { 
+      "require" : {
         "FunctionDeclaration" : true,
         "MethodDefinition" : true,
         "ClassDeclaration" : true,
         "ArrowFunctionExpression" : true,
-        "FunctionExpression" : true 
+        "FunctionExpression" : true
       }
     }]
   }
