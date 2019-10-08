@@ -19,7 +19,7 @@
     "10up"
   ],
   "devDependencies": {
-    "eslint": "^2.0.0"
+    "eslint": "^6.5.1"
   },
   "eslintConfig": {
     "extends": "./.eslintrc"
