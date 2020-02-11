@@ -1,6 +1,6 @@
 {
   "name": "@10up/eslint-config",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "description": "A shareable ESLint configuration",
   "main": ".eslintrc",
   "repository": {
@@ -18,8 +18,8 @@
     "eslint-config",
     "10up"
   ],
-  "devDependencies": {
-    "eslint": "^6.5.1"
+  "dependencies": {
+    "@wordpress/eslint-plugin": "^2.4.0"
   },
   "eslintConfig": {
     "extends": "./.eslintrc"

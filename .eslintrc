@@ -1,32 +1,3 @@
 {
-  "parser": "babel-eslint",
-  "env": {
-    "browser": true,
-    "es6": true
-  },
-  "extends": "eslint:recommended",
-  "rules": {
-    "yoda": [ 2, "always" ],
-    "indent": [ 2, "tab", { "SwitchCase": 2 } ],
-    "linebreak-style": [ 2, "unix" ],
-    "quotes": [ 2, "single" ],
-    "semi": [ 2, "always" ],
-    "space-in-parens": [ 2, "always" ],
-    "camelcase": [ 2 ],
-    "prefer-template": [ 2 ],
-    "prefer-const": [ 2 ],
-    "prefer-destructuring": [ 1 ],
-    "no-console": [ 1 ],
-    "no-alert": [ 1 ],
-    "no-var": [ 1 ],
-    "require-jsdoc": [ 2, {
-      "require" : {
-        "FunctionDeclaration" : true,
-        "MethodDefinition" : true,
-        "ClassDeclaration" : true,
-        "ArrowFunctionExpression" : true,
-        "FunctionExpression" : true
-      }
-    }]
-  }
+  "extends": [ "plugin:@wordpress/eslint-plugin/recommended" ]
 }
