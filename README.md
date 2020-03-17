@@ -20,8 +20,6 @@ npx install-peerdeps --dev @10up/eslint-config@next
 npm install @10up/eslint-config --save-dev
 ```
 
-This package export three ESLint configs.
-
 ## Avaliable ESLint configs
 
 ### @10up/eslint-config
@@ -31,6 +29,16 @@ The default export and contains common rules that are not specific to any framew
 ### @10up/eslint-config/react
 
 Extends `@10up/eslint-config` adding specific rules to react.
+
+### @10up/eslint-config/gutenberg
+
+Extends `@10up/eslint-config/react` adding the custom gutenberg rules from `@wordpress/eslint-plugin`.
+
+This rule requires installing the `@wordpress/eslint-plugin` package.
+
+```sh
+npm install --save-dev @wordpress/eslint-plugin
+```
 
 ### @10up/eslint-config/node
 
