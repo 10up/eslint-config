@@ -5,9 +5,9 @@ module.exports = {
 	},
 	extends: './index',
 	rules: {
-		'no-path-concat': ['error'],
-		'no-process-exit': ['error'],
-		'global-require': ['error'],
-		'no-new-require': ['error'],
+		'no-path-concat': 2,
+		'no-process-exit': 2,
+		'global-require': 2,
+		'no-new-require': 2,
 	},
 };
