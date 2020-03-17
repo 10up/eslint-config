@@ -62,11 +62,11 @@ In order to use this config, choose the one you want and add this configuration 
 }
 ```
 
-Or add a `.eslintrc` file to your project root containing:
+Or add a `.eslintrc.js` file to your project root containing:
 ```json
-{
-    "extends": "@10up/eslint-config"
-}
+module.exports = {
+	extends: '@10up/eslint-config',
+};
 ```
 
 ## Support Level

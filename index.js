@@ -7,7 +7,7 @@ module.exports = {
 	extends: ['airbnb-base', 'prettier', 'plugin:prettier/recommended'],
 	rules: {
 		'prettier/prettier': 2,
-		'class-methods-use-this': 0, // sometimes it makes sense to have instance methods not using this.
+		'class-methods-use-this': 0,
 		'no-restricted-syntax': [
 			'error',
 			{
@@ -27,9 +27,7 @@ module.exports = {
 			},
 		], // allowing ForOf.
 		'no-tabs': 0,
-		indent: ['error', 'tab', { SwitchCase: 1 }], // 10up historically prefers tabs over spaces.
-
-		// jsdoc rules
+		indent: ['error', 'tab', { SwitchCase: 1 }],
 		'jsdoc/check-alignment': 1,
 		'jsdoc/check-examples': 1,
 		'jsdoc/check-indentation': 1,

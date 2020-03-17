@@ -14,6 +14,6 @@ module.exports = {
 		'plugin:prettier/recommended',
 	],
 	rules: {
-		'react/jsx-filename-extension': 0, // no need to enforce .jsx extension
+		'react/jsx-filename-extension': 0,
 	},
 };
