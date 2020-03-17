@@ -4,7 +4,7 @@
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
 
-[@10up/eslint-config](https://github.com/10up/eslint-config) is a shareable configuration package for [eslint](http://eslint.org).
+[@10up/eslint-config](https://github.com/10up/eslint-config) is a shareable configuration package for [eslint](http://eslint.org) built on top of [eslint-airbnb-config](https://github.com/airbnb/javascript) and modified to meet 10up's own standards.
 
 ## Installation
 
