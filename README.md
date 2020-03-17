@@ -1,20 +1,44 @@
-# eslint-config-10up
+# 10up Eslint Config
 
 > ESLint [shareable config](https://github.com/10up/eslint-config)
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
 
-[eslint-config-10up](https://github.com/10up/eslint-config) is a shareable configuration package for [eslint](http://eslint.org).
+[@10up/eslint-config](https://github.com/10up/eslint-config) is a shareable configuration package for [eslint](http://eslint.org).
 
 ## Installation
 
-To use this config, install [@10up/eslint-config](https://github.com/10up/eslint-config) as a development dependecy of your project:
+1. Install all peer dependencies
+
+```sh
+npx install-peerdeps --dev @10up/eslint-config@next
+```
+
+2. Install [@10up/eslint-config](https://github.com/10up/eslint-config) as a development dependecy of your project:
 
 ```sh
 npm install @10up/eslint-config --save-dev
 ```
 
-Next, add this configuration to your `package.json`:
+This package export three ESLint configs.
+
+## Avaliable ESLint configs
+
+### @10up/eslint-config
+
+The default export and contains common rules that are not specific to any framework or environment.
+
+### @10up/eslint-config/react
+
+Extends `@10up/eslint-config` adding specific rules to react.
+
+### @10up/eslint-config/node
+
+Extends `@10up/eslint-config` adding specific rules to Node.js.
+
+## Usage
+
+In order to use this config, choose the one you want and add this configuration to your `package.json`:
 
 ```json
 {
@@ -24,7 +48,7 @@ Next, add this configuration to your `package.json`:
 }
 ```
 
-Or add a .eslintrc file to your project root containing: 
+Or add a `.eslintrc` file to your project root containing:
 ```json
 {
     "extends": "@10up/eslint-config"
