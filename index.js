@@ -6,7 +6,6 @@ module.exports = {
 	plugins: ['jsdoc'],
 	extends: ['airbnb-base'],
 	rules: {
-		'func-style': 0, // disables for now, 7.1 needs more thinking.
 		'class-methods-use-this': 0, // sometimes it makes sense to have instance methods not using this.
 		'no-restricted-syntax': [
 			'error',
@@ -48,8 +47,8 @@ module.exports = {
 					FunctionDeclaration: true,
 					FunctionExpression: true,
 					MethodDefinition: true,
-				}
-			}
+				},
+			},
 		],
 		'jsdoc/require-param': 1,
 		'jsdoc/require-param-description': 1,
