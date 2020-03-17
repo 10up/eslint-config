@@ -30,6 +30,12 @@ The default export and contains common rules that are not specific to any framew
 
 Extends `@10up/eslint-config` adding specific rules to react.
 
+This rule requires installing `babel-eslint`
+
+```sh
+npm install --save-dev 'babel-eslint
+```
+
 ### @10up/eslint-config/gutenberg
 
 Extends `@10up/eslint-config/react` adding the custom gutenberg rules from `@wordpress/eslint-plugin`.

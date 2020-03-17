@@ -3,23 +3,27 @@ module.exports = {
 		browser: true,
 		es6: true,
 	},
-	plugins: ['jsdoc'],
-	extends: ['airbnb-base'],
+	plugins: ['jsdoc', 'prettier'],
+	extends: ['airbnb-base', 'prettier', 'plugin:prettier/recommended'],
 	rules: {
+		'prettier/prettier': 2,
 		'class-methods-use-this': 0, // sometimes it makes sense to have instance methods not using this.
 		'no-restricted-syntax': [
 			'error',
 			{
 				selector: 'ForInStatement',
-				message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+				message:
+					'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
 			},
 			{
 				selector: 'LabeledStatement',
-				message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+				message:
+					'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
 			},
 			{
 				selector: 'WithStatement',
-				message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+				message:
+					'`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
 			},
 		], // allowing ForOf.
 		'no-tabs': 0,
@@ -32,24 +36,16 @@ module.exports = {
 		'jsdoc/check-param-names': 1,
 		'jsdoc/check-tag-names': 1,
 		'jsdoc/check-types': 1,
-		'jsdoc/match-description': 1,
 		'jsdoc/newline-after-description': 1,
 		'jsdoc/no-undefined-types': 1,
 		'jsdoc/require-description': 1,
 		'jsdoc/require-jsdoc': [
-			1, {
+			0,
+			{
 				publicOnly: true,
 				exemptEmptyFunctions: true,
-				require: {
-					ArrowFunctionExpression: true,
-					ClassDeclaration: true,
-					ClassExpression: true,
-					FunctionDeclaration: true,
-					FunctionExpression: true,
-					MethodDefinition: true,
-				},
 			},
-		],
+		], // disabling for now because eslint --fix is adding empty jsdoc blocks.
 		'jsdoc/require-param': 1,
 		'jsdoc/require-param-description': 1,
 		'jsdoc/require-param-name': 1,
