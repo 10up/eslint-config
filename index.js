@@ -6,7 +6,24 @@ module.exports = {
 	plugins: ['jsdoc', 'prettier'],
 	extends: ['airbnb-base', 'prettier', 'plugin:prettier/recommended'],
 	rules: {
-		'prettier/prettier': 2,
+		'prettier/prettier': [
+			2,
+			{
+				useTabs: true,
+				tabWidth: 4,
+				printWidth: 100,
+				singleQuote: true,
+				trailingComma: 'all',
+				bracketSpacing: true,
+				parenSpacing: false,
+				jsxBracketSameLine: true,
+				semi: true,
+				arrowParens: 'always',
+			},
+			{
+				usePrettierrc: false,
+			},
+		],
 		'class-methods-use-this': 0,
 		'no-restricted-syntax': [
 			'error',
