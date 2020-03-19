@@ -1,11 +1,5 @@
 module.exports = {
-	extends: [
-		'./react',
-		'plugin:@wordpress/eslint-plugin/custom',
-		'prettier',
-		'prettier/react',
-		'plugin:prettier/recommended',
-	],
+	extends: ['plugin:@wordpress/eslint-plugin/custom', './react'],
 	globals: {
 		window: true,
 		document: true,
