@@ -50,6 +50,16 @@ npm install --save-dev @wordpress/eslint-plugin
 
 Extends `@10up/eslint-config` adding specific rules to Node.js.
 
+### @10up/eslint-config/jest
+
+Adds specic rules for the `jest` testing framework.
+
+This rule requires installing `eslint-plugin-jest`
+
+```sh
+npm install --save-dev eslint-plugin-jest
+```
+
 ## Usage
 
 In order to use this config, choose the one you want and add this configuration to your `package.json`:
