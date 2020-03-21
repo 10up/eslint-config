@@ -2,9 +2,10 @@ module.exports = {
 	env: {
 		browser: true,
 		es6: true,
+		'jest/globals': true,
 	},
-	plugins: ['jsdoc', 'prettier'],
-	extends: ['airbnb-base', 'prettier', 'plugin:prettier/recommended'],
+	plugins: ['jest', 'jsdoc', 'prettier'],
+	extends: ['airbnb-base', 'plugin:jest/recommended', 'prettier', 'plugin:prettier/recommended'],
 	rules: {
 		'prettier/prettier': [
 			2,
