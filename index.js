@@ -16,7 +16,7 @@ module.exports = {
 				trailingComma: 'all',
 				bracketSpacing: true,
 				parenSpacing: false,
-				jsxBracketSameLine: true,
+				jsxBracketSameLine: false,
 				semi: true,
 				arrowParens: 'always',
 			},
