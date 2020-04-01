@@ -6,6 +6,7 @@ module.exports = {
 		wp: 'readonly',
 	},
 	rules: {
-		'react/react-in-jsx-scope': 'off',
+		'react/react-in-jsx-scope': 0,
+		'import/no-unresolved': [2, { ignore: ['^@wordpress/'] }],
 	},
 };
