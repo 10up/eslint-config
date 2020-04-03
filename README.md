@@ -24,16 +24,16 @@ npm install @10up/eslint-config --save-dev
 
 ### @10up/eslint-config
 
-The default export and contains common rules that are not specific to any framework or environment.
+The default export contains common rules that are not specific to any framework or environment.
 
 ### @10up/eslint-config/react
 
-Extends `@10up/eslint-config` adding specific rules to react.
+Extends `@10up/eslint-config` adding specific rules to React.
 
 This rule requires installing `babel-eslint`
 
 ```sh
-npm install --save-dev 'babel-eslint
+npm install --save-dev babel-eslint
 ```
 
 ### @10up/eslint-config/gutenberg
@@ -52,7 +52,7 @@ Extends `@10up/eslint-config` adding specific rules to Node.js.
 
 ### @10up/eslint-config/jest
 
-Adds specic rules for the `jest` testing framework.
+Adds specific rules for the `jest` testing framework.
 
 This rule requires installing `eslint-plugin-jest`
 
