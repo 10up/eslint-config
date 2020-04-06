@@ -36,7 +36,7 @@ This rule requires installing `babel-eslint`
 npm install --save-dev babel-eslint
 ```
 
-### @10up/eslint-config/gutenberg
+### @10up/eslint-config/wordpress
 
 Extends `@10up/eslint-config/react` adding the custom gutenberg rules from `@wordpress/eslint-plugin`.
 
@@ -59,6 +59,10 @@ This rule requires installing `eslint-plugin-jest`
 ```sh
 npm install --save-dev eslint-plugin-jest
 ```
+
+### @10up/eslint-config/legacy
+
+This legacy config contains only rules for ES5. It should be used for projects without babel that are still writing legacy JavaScript code.
 
 ## Usage
 
