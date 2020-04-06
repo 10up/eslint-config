@@ -11,7 +11,7 @@
 1. Install all peer dependencies
 
 ```sh
-npx install-peerdeps --dev @10up/eslint-config@next
+npx install-peerdeps --dev @10up/eslint-config
 ```
 
 2. Install [@10up/eslint-config](https://github.com/10up/eslint-config) as a development dependecy of your project:
@@ -26,6 +26,13 @@ npm install @10up/eslint-config --save-dev
 
 The default export contains common rules that are not specific to any framework or environment.
 
+```js
+// eslintrc.js
+module.exports = {
+	extends: ['@10up/eslint-config'],
+};
+```
+
 ### @10up/eslint-config/react
 
 Extends `@10up/eslint-config` adding specific rules to React.
@@ -34,6 +41,13 @@ This rule requires installing `babel-eslint`
 
 ```sh
 npm install --save-dev babel-eslint
+```
+
+```js
+// eslintrc.js
+module.exports = {
+	extends: ['@10up/eslint-config/react'],
+};
 ```
 
 ### @10up/eslint-config/wordpress
@@ -46,9 +60,23 @@ This rule requires installing the `@wordpress/eslint-plugin` package.
 npm install --save-dev @wordpress/eslint-plugin
 ```
 
+```js
+// eslintrc.js
+module.exports = {
+	extends: ['@10up/eslint-config/wordpress'],
+};
+```
+
 ### @10up/eslint-config/node
 
 Extends `@10up/eslint-config` adding specific rules to Node.js.
+
+```js
+// eslintrc.js
+module.exports = {
+	extends: ['@10up/eslint-config/node'],
+};
+```
 
 ### @10up/eslint-config/jest
 
@@ -60,9 +88,23 @@ This rule requires installing `eslint-plugin-jest`
 npm install --save-dev eslint-plugin-jest
 ```
 
+```js
+// eslintrc.js
+module.exports = {
+	extends: ['@10up/eslint-config/react', '@10up/eslint-config/jest'],
+};
+```
+
 ### @10up/eslint-config/legacy
 
 This legacy config contains only rules for ES5. It should be used for projects without babel that are still writing legacy JavaScript code.
+
+```js
+// eslintrc.js
+module.exports = {
+	extends: ['@10up/eslint-config/legacy'],
+};
+```
 
 ## Usage
 
@@ -79,9 +121,21 @@ In order to use this config, choose the one you want and add this configuration 
 Or add a `.eslintrc.js` file to your project root containing:
 ```js
 module.exports = {
-	extends: '@10up/eslint-config',
+	extends: ['@10up/eslint-config'],
 };
 ```
+
+## VSCode integration
+
+We recommend turning on VSCode settings to automatically run `eslint --fix` on save.
+
+```json
+"editor.codeActionsOnSave": {
+   "source.fixAll.eslint": true,
+}
+```
+
+This will automagically format your code once you save. You don't need VSCode prettier extension enabled or running on save as eslint will automatically run `prettier` for you.
 
 ## Support Level
 
