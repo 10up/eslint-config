@@ -37,11 +37,6 @@ module.exports = {
 
 Extends `@10up/eslint-config` adding specific rules to React.
 
-This rule requires installing `babel-eslint`
-
-```sh
-npm install --save-dev babel-eslint
-```
 
 ```js
 // eslintrc.js
