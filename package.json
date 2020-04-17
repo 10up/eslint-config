@@ -3,7 +3,9 @@
   "version": "2.0.3-next",
   "description": "A shareable ESLint configuration",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+	"test": "node tests/test-eslint-config --config-file=./index.js",
+	"test:react": "node tests/test-eslint-config --config-file=./react"
   },
   "repository": {
     "type": "git",
