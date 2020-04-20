@@ -1,4 +1,5 @@
 module.exports = {
+	parser: 'babel-eslint',
 	env: {
 		browser: true,
 		es6: true,
@@ -32,5 +33,6 @@ module.exports = {
 					'`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
 			},
 		], // allowing ForOf.
+		'no-new': 1,
 	},
 };
