@@ -14,12 +14,13 @@ const formatter = CLIEngine.getFormatter();
 
 const verbose = process.argv.indexOf('--verbose') > -1;
 
-console.log('Running ESLint on tests directories. Use --verbose for a detailed report.');
+console.log('Running ESLint on fixtures directories. Use --verbose for a detailed report.');
 console.log(`\nLinting ${join(__dirname, directoryToTest, '/fail/*.js')}...`);
 
 const antipatternReport = cli.executeOnFiles([join(__dirname, directoryToTest, '/fail/*.js')]);
 const antipatternCounts = countResults(antipatternReport.results);
 const allFail = antipatternReport.results.reduce(
+	// eslint-disable-next-line no-return-assign,no-param-reassign
 	(didFail, file) => (didFail = didFail && (file.errorCount > 0 || file.warningCount > 0)),
 	true,
 );
