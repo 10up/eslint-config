@@ -34,5 +34,21 @@ module.exports = {
 			},
 		], // allowing ForOf.
 		'no-new': 1,
+		// no-plus-plus--
+		'no-plus-plus': 0,
+		// Disable prefer-destructing for arrays as it can lead to weird and confusing syntax
+		'prefer-destructuring': [2, { array: false, object: true }],
+		// this rule is good bt annoying
+		'import/prefer-default-export': 0,
+		// an import is valid as long as it's a dependency somewhere,
+		// it's up to developer make sure dev dependencies aren't used in the production bundle
+		'import/no-extraneous-dependencies': [
+			'error',
+			{ devDependencies: true, optionalDependencies: true, peerDependencies: true },
+		],
+		// with ES6 the name of the function can be inferred most of the times.
+		'func-names': [0, 'as-needed'],
+		// this is hard to follow when the backend does not follow camelcase conventions when sending data.
+		camelcase: 0,
 	},
 };

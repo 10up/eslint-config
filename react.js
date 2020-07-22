@@ -15,5 +15,7 @@ module.exports = {
 	],
 	rules: {
 		'react/jsx-filename-extension': 0,
+		// prop spreading is dangerous but has its use cases
+		'jsx-props-no-spreading': 1,
 	},
 };
