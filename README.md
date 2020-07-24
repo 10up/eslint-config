@@ -120,6 +120,25 @@ module.exports = {
 };
 ```
 
+## TypeScript Support
+
+If you want TypeScript support, make sure to install `@typescript-eslint/eslint-plugin` and `@typescript-eslint/parser`
+
+```sh
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
+change the eslint parser to `@typescript-eslint/parser` and add the typescript plugin
+
+```js
+// eslintrc.js
+module.exports = {
+	parser: '@typescript-eslint/parser',
+	extends: ['@10up/eslint-config/react'],
+	plugins: ['@typescript-eslint'],
+} 
+```
+
 ## VSCode integration
 
 We recommend turning on VSCode settings to automatically run `eslint --fix` on save.

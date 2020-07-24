@@ -13,6 +13,17 @@ module.exports = {
 		'prettier',
 		'plugin:prettier/recommended',
 	],
+	settings: {
+		'import/resolver': {
+			node: {
+				extensions: ['.js', '.jsx', '.ts', '.tsx'],
+			},
+			typescript: {
+				alwaysTryTypes: true,
+			},
+		},
+		'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
+	},
 	rules: {
 		'class-methods-use-this': 0,
 		'no-restricted-syntax': [
@@ -50,5 +61,30 @@ module.exports = {
 		'func-names': [0, 'as-needed'],
 		// this is hard to follow when the backend does not follow camelcase conventions when sending data.
 		camelcase: 0,
+		// we want to allow changing object parameters.
+		'no-param-reassign': [2, { props: false }],
 	},
+	overrides: [
+		{
+			files: ['*.ts'],
+			rules: {
+				// not needed for typescript
+				'no-undef': 0,
+				// we need to use the no-unused-vars rule from ts.
+				'no-unused-vars': 0,
+				'@typescript-eslint/no-unused-vars': 2,
+				'import/extensions': [
+					'error',
+					'ignorePackages',
+					{
+						js: 'never',
+						mjs: 'never',
+						jsx: 'never',
+						ts: 'never',
+						tsx: 'never',
+					},
+				],
+			},
+		},
+	],
 };
