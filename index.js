@@ -66,7 +66,7 @@ module.exports = {
 	},
 	overrides: [
 		{
-			files: ['*.ts'],
+			files: ['*.ts', '*.tsx'],
 			rules: {
 				// not needed for typescript
 				'no-undef': 0,
@@ -84,6 +84,7 @@ module.exports = {
 						tsx: 'never',
 					},
 				],
+				'jsdoc/require-param-type': 0,
 			},
 		},
 	],

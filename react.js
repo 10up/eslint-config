@@ -18,4 +18,12 @@ module.exports = {
 		// prop spreading is dangerous but has its use cases
 		'jsx-props-no-spreading': 1,
 	},
+	overrides: [
+		{
+			files: ['*.ts', '*.tsx'],
+			rules: {
+				'react/prop-types': 0,
+			},
+		},
+	],
 };
