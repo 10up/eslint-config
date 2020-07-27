@@ -17,6 +17,14 @@ module.exports = {
 		'react/jsx-filename-extension': 0,
 		// prop spreading is dangerous but has its use cases
 		'jsx-props-no-spreading': 1,
+		// prefer arrow functions for defining components
+		'react/function-component-definition': [
+			1,
+			{
+				namedComponents: 'arrow-function',
+				unnamedComponents: 'arrow-function',
+			},
+		],
 	},
 	overrides: [
 		{

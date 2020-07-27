@@ -1,6 +1,7 @@
 module.exports = {
 	extends: [
 		'airbnb-base/legacy',
+		require.resolve('./rules/general'),
 		require.resolve('./rules/whitespace'),
 		require.resolve('./rules/prettier'),
 		'prettier',
