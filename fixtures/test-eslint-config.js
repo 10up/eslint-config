@@ -21,7 +21,7 @@ const antipatternReport = cli.executeOnFiles([join(__dirname, directoryToTest, '
 const antipatternCounts = countResults(antipatternReport.results);
 const allFail = antipatternReport.results.reduce(
 	// eslint-disable-next-line no-return-assign,no-param-reassign
-	(didFail, file) => (didFail = didFail && (file.errorCount > 0 || file.warningCount > 0)),
+	(didFail, file) => didFail && (file.errorCount > 0 || file.warningCount > 0),
 	true,
 );
 
@@ -44,8 +44,8 @@ if (allFail) {
 	process.exitCode = 1;
 }
 
-// Log full report when --verbose, or when no errors are reported.
-if (verbose || !antipatternCounts.errors) {
+// Log full report when --verbose.
+if (verbose) {
 	console.log(formatter(antipatternReport.results));
 }
 
