@@ -9,5 +9,6 @@ module.exports = {
 		camelcase: 0,
 		// we want to allow changing object parameters.
 		'no-param-reassign': [2, { props: false }],
+		'no-shadow': 0,
 	},
 };
