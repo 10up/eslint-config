@@ -15,5 +15,31 @@ module.exports = {
 	],
 	rules: {
 		'react/jsx-filename-extension': 0,
+		'react/forbid-prop-types': [
+			'error',
+			{
+				forbid: ['any'],
+				checkContextTypes: true,
+				checkChildContextTypes: true,
+			},
+		],
+		// prop spreading is dangerous but has its use cases
+		'jsx-props-no-spreading': 1,
+		// prefer arrow functions for defining components
+		'react/function-component-definition': [
+			1,
+			{
+				namedComponents: 'arrow-function',
+				unnamedComponents: 'arrow-function',
+			},
+		],
 	},
+	overrides: [
+		{
+			files: ['*.ts', '*.tsx'],
+			rules: {
+				'react/prop-types': 0,
+			},
+		},
+	],
 };
