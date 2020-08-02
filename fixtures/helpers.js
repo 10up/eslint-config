@@ -1,3 +1,9 @@
+/**
+ * Returns a reference to an eslint config file.
+ * Reads the `--config-file` positional argument and defaults to `./index` if nothing is passed.
+ *
+ * @returns {string} The eslint config file.
+ */
 const getConfigFile = () => {
 	const configArgs = process.argv.filter((arg) => arg.includes('--config-file'));
 
@@ -8,6 +14,13 @@ const getConfigFile = () => {
 	return configArgs[0].replace('--config-file=', '');
 };
 
+/**
+ * Consolidate results.
+ *
+ * @param {object[]} results Arra of results
+ *
+ * @returns {object}
+ */
 const countResults = (results) =>
 	results.reduce(
 		(counts, file) => ({
