@@ -3,8 +3,9 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable react/react-in-jsx-scope */
 
+// The rule will allow .js extension not only with .jsx.
 const testFunc = () => {
-	// The rule will allow .js extension.
+	// Awesome code here.
 };
 
 <testFunc />;

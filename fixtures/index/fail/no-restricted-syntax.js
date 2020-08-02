@@ -16,7 +16,7 @@ labelStart
 
 for (const i in arr) {
 	if (i % 2 === 0) {
-		 goto labelStart; // eslint-disable-line
+		 goto labelStart;
 	}
 }
 
