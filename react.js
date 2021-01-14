@@ -33,6 +33,8 @@ module.exports = {
 				unnamedComponents: 'arrow-function',
 			},
 		],
+		'react/jsx-uses-react': 0,
+		'react/react-in-jsx-scope': 0,
 	},
 	overrides: [
 		{
