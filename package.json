@@ -1,6 +1,6 @@
 {
   "name": "@10up/eslint-config",
-  "version": "2.3.0-rc.3",
+  "version": "2.3.0",
   "description": "A shareable ESLint configuration",
   "scripts": {
     "lint": "eslint .",
@@ -44,7 +44,7 @@
   "peerDependencies": {
 		"@babel/core": "^7.2.0",
 		"@babel/eslint-parser": "^7.12.13",
-		"eslint": "^7.19.0",
+		"eslint": "^7.2.0",
 		"eslint-config-airbnb": "^18.2.1",
 		"eslint-config-airbnb-base": "^14.2.1",
 		"eslint-config-prettier": "^7.1.0",
