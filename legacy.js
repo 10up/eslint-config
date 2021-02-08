@@ -1,4 +1,7 @@
 module.exports = {
+	parserOptions: {
+		requireConfigFile: false,
+	},
 	extends: [
 		'airbnb-base/legacy',
 		require.resolve('./rules/general'),
