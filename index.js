@@ -4,6 +4,7 @@ module.exports = {
 		requireConfigFile: false,
 		babelOptions: {
 			rootMode: 'upward-optional',
+			configFile: require.resolve('./babel.config.js'),
 		},
 	},
 	env: {
