@@ -2,6 +2,10 @@ module.exports = {
 	parser: '@babel/eslint-parser',
 	parserOptions: {
 		requireConfigFile: false,
+		babelOptions: {
+			rootMode: 'upward-optional',
+			configFile: require.resolve('./babel.config.js'),
+		},
 	},
 	env: {
 		browser: true,
