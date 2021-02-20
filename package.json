@@ -24,8 +24,10 @@
     "eslint-config",
     "10up"
   ],
+  "dependencies": {
+	  "@10up/babel-preset-default": "^1.1.0"
+  },
   "devDependencies": {
-    "@10up/babel-preset-default": "^1.1.0",
     "@babel/core": "^7.2.0",
     "@babel/eslint-parser": "^7.12.13",
     "@wordpress/eslint-plugin": "^4.0.0",

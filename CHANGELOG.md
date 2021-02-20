@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
+## [2.3.1]
+- Fixes a bug with @babel/eslint-parser where it would complain about missing babel config.
+
 ## [2.3.0]
 - Fixes a bug with NPM 7 by updating peer dependencies
 - Removes babel-eslint in favor of @babel/eslint-parser, make sure you project have a babel config as the new babel eslint parser will use your project's babel config for linting.
