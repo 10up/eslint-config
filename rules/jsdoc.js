@@ -16,7 +16,7 @@ module.exports = {
 				exemptEmptyFunctions: true,
 			},
 		], // disabling for now because eslint --fix is adding empty jsdoc blocks.
-		'jsdoc/require-param': 1,
+		'jsdoc/require-param': [1, { enableFixer: false }],
 		'jsdoc/require-param-description': 1,
 		'jsdoc/require-param-name': 1,
 		'jsdoc/require-param-type': 1,
