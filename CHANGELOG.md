@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
+## [2.3.3]
+- Remove the rules for prop-type and prop-spreading in the wordpress config.
+
 ## [2.3.2]
 - Disables eslint fixer for `jsdoc/require-param` due to a [bug](https://github.com/10up/10up-scripts/issues/17) with vscode where it would add duplicated params.
 
