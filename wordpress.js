@@ -8,6 +8,8 @@ module.exports = {
 	},
 	rules: {
 		'react/react-in-jsx-scope': 0,
+		'react/prop-types': 0,
+		'react/jsx-props-no-spreading': 0,
 		'@wordpress/dependency-group': 0,
 		'import/no-unresolved': [2, { ignore: ['^@wordpress/'] }],
 	},
