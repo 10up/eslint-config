@@ -14,13 +14,13 @@
 npx install-peerdeps --dev @10up/eslint-config
 ```
 
-2. Install [@10up/eslint-config](https://github.com/10up/eslint-config) as a development dependecy of your project:
+2. Install [@10up/eslint-config](https://github.com/10up/eslint-config) as a development dependency of your project:
 
 ```sh
 npm install @10up/eslint-config --save-dev
 ```
 
-## Avaliable ESLint configs
+## Available ESLint configs
 
 ### @10up/eslint-config
 
