@@ -20,7 +20,7 @@ npx install-peerdeps --dev @10up/eslint-config
 npm install @10up/eslint-config --save-dev
 ```
 
-## Avaliable ESLint configs
+## Available ESLint configs
 
 ### @10up/eslint-config
 
