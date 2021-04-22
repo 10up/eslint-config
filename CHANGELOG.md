@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
+## [2.3.4]
+- Treats @wordpress packages as core-modules in `@10up/eslint-config/wordpress`.
+
 ## [2.3.3]
 - Remove the rules for prop-type and prop-spreading in the wordpress config.
 
