@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [2.3.4]
 - Treats @wordpress packages as core-modules in `@10up/eslint-config/wordpress`.
+- Uses `'@typescript-eslint/no-use-before-define` instead of eslint `no-use-before-define` for typescript files.
 
 ## [2.3.3]
 - Remove the rules for prop-type and prop-spreading in the wordpress config.
