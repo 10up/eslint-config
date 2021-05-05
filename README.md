@@ -1,5 +1,7 @@
 # 10up Eslint Config
 
+**DEPRECATED.** Please go to https://github.com/10up/10up-toolkit
+
 > ESLint [shareable config](https://github.com/10up/eslint-config)
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
